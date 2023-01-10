@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(148, 148, 148);
+            margin: 0px;
+        } 
+        header{
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+        } 
+        nav{
+            background-color: rgb(177, 173, 173);
+            padding: 3px;
+            box-shadow: 3px 2px 3px rgb(0 0 0 / 46%);
+        } 
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }  
+        nav > a:hover{
+            text-decoration: underline;
+        }   
+        main{
+            background-color: rgb(215, 215, 255);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        } 
+        article{
+            background-color: white;
+            padding: 5px;
+        } 
+        article > aside {
+            background-color: lightgray;
+        } 
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        } 
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quos sit aliquam doloremque non quia necessitatibus placeat quibusdam iste fugit ipsa, dignissimos, cum alias numquam? Asperiores esse velit corporis! Praesentium.</p>
+                <aside>
+                    <p>artiho escrito por vitor</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Noticia sobre os estados unidos</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum adipisci quod natus quas in esse, accusantium praesentium rem non ab quae temporibus, delectus amet sed necessitatibus et dolorum nihil labore?</p>
+                <aside>
+                    <p>Artigo escrito por vitor</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Vitor</p>
+    </footer>
+
+</body>
+</html>

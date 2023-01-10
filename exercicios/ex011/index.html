@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html5</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/m.jpg" type="image/jpg">
+        <img src="imagens/g.jpg" alt="G">
+    </picture>
+
+    <h1>Audios em html5</h1>
+    <audio src="midia/kalimba.mp3" controls autoplay></audio>
+    <!-- MP3 WAV OGG -->
+    <audio preload="metadata" controls>
+        <source src="midia/sleepaway.mp3" type="audio/mpeg">
+
+    </audio>
+</body>
+</html>
