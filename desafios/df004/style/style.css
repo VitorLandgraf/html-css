@@ -32,12 +32,12 @@ header p{
 main{
     padding: 90px 30px;
 }
-main pre{
+pre{
     font-family: 'Sriracha', cursive;
     margin: 0px;
     white-space: pre-wrap;
 }
-main pre::first-line {
+pre::first-line {
     text-indent: 0;
 }
 

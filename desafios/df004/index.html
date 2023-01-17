@@ -20,7 +20,7 @@
     </header>
     <main>
         <article>
-           <pre>Estou ficando cansado
+           <pre ::first-line>Estou ficando cansado
             Da tal tecnologia
             Só se fala por e-mail
             Mensagem curta e fria
@@ -75,5 +75,14 @@
     <footer>
         <p>Site criado por <b>Vitor Landgraf</b></p>
     </footer>
+    <script>
+        const preElements = document.querySelectorAll('pre');
+
+        preElements.forEach(pre => {
+            const text = pre.textContent.replace(/^\s+/gm, "");
+        pre.textContent = text;
+        });
+
+    </script>
 </body>
 </html>
