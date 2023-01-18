@@ -41,13 +41,22 @@ pre{
     line-height: 50px;
     padding: 70px 0px 70px 30px;
 }
-#texto{
-    
+.p-espaco{
+    padding-bottom: 0px;
 }
 #img1{
     box-shadow: inset 0px 9px 15px rgba(0, 0, 0, 0.39);
     position: relative;
     background-image: url('https://www.portaldoholanda.com.br/sites/default/files/imagecache/2020_noticia_fotogrande/portaldoholanda-ladybug-3475779640-1098382.jpg');
+    height: 450px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center right;
+}
+#img2{
+    box-shadow: inset 0px 9px 15px rgba(0, 0, 0, 0.39);
+    position: relative;
+    background-image: url('http://www.taugor.com.br/wp-content/uploads/2018/05/reconhecimento-de-manuscrita--676x380.jpg');
     height: 450px;
     background-size: cover;
     background-attachment: fixed;
