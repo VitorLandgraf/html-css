@@ -8,7 +8,6 @@
     margin: 0px;
     padding: 0px;
 }
-
 .destaque{
     font-family: 'Passion One', cursive;
 }
@@ -16,6 +15,9 @@
     font-weight: bold;
     text-decoration: none;
     color: white;
+}
+.link:hover{
+    text-decoration: underline;
 }
 header{
     background-color: black;
@@ -30,14 +32,45 @@ header p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 main{
-    padding: 90px 30px;
+    
 }
 pre{
     font-family: 'Sriracha', cursive;
-    margin: 0px;
-    white-space: pre-wrap;
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 50px;
+    padding: 70px 0px 70px 30px;
 }
-pre::first-line {
-    text-indent: 0;
+#texto{
+    
 }
+#img1{
+    box-shadow: inset 0px 9px 15px rgba(0, 0, 0, 0.39);
+    position: relative;
+    background-image: url('https://www.portaldoholanda.com.br/sites/default/files/imagecache/2020_noticia_fotogrande/portaldoholanda-ladybug-3475779640-1098382.jpg');
+    height: 450px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center right;
+}
+.txt-fundo{
+    display: inline-block;
+    padding: 5px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.473);
+    color: white;
+    position: absolute;
+    top: 8%;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 30px;
+    padding-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
+}
+
 
