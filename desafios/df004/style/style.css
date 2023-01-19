@@ -8,6 +8,9 @@
     margin: 0px;
     padding: 0px;
 }
+html, body{
+    min-height: 100vh;
+}
 .destaque{
     font-family: 'Passion One', cursive;
 }
@@ -26,20 +29,18 @@ header{
     padding: 50px 30px 50px 30px;
 }
 header h1{
-    font-size: 3.8em;
+    font-size: 10vw;
+    font-variant: small-caps;
 }
 header p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-main{
-    
 }
 pre{
     font-family: 'Sriracha', cursive;
     font-weight: normal;
     font-size: 1.5em;
     line-height: 50px;
-    padding: 70px 0px 70px 30px;
+    padding: 10vh 0vh 10vh 5vh;
 }
 .p-espaco{
     padding-bottom: 0px;
