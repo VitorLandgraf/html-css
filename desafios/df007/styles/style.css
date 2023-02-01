@@ -11,7 +11,7 @@ body{
     background-repeat: unset;*/
 }
 .logos{
-    max-width: 100px;
+    max-width: 12vw;
     height: auto;
     border-radius: 100px;
 }
@@ -25,7 +25,11 @@ ul:after {
     display: table;
   }
 li{
-    max-width: 60%;
+    max-width: 50%;
     height: auto;
+    padding: 10px;
+    
+}
+iframe{
     
 }
