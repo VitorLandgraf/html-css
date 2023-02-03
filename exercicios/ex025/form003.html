@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        *{
+            font-family: arial;
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-image: linear-gradient(to bottom, rgb(188, 188, 255), rgb(112, 112, 255));
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+        }
+        main{
+            background-color: white;
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 4px;
+        }
+        h1{
+            padding-top: 20%;
+            text-align: center;
+        }
+        form{
+            padding-left: 25%;
+            padding-top: 20px;
+        }
+        p{
+            margin: 20px 0px;
+        }
+        p#botoes{
+            margin: 0px 17px;
+        }
+        input.botao{
+            padding: 10px;
+            margin: 0px 5px;
+            font-weight: bold;
+            border: 0px;
+            color: white;
+            background-color: rgb(27, 172, 27);
+        }
+        input#inome{
+            padding: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.219);
+            text-align: center;
+        }
+        input#imedia{
+            padding: 5px;
+            width: 170px;
+            padding: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.219);
+            text-align: center;
+        }
+        input#imes{
+            padding: 5px;
+            width: 170px;
+            padding: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.219);
+            text-align: center;
+            color: rgba(0, 0, 0, 0.61);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Formulario</h1>
+        <form action="cadastro.php" method="get">
+            <p>
+                <label for="inome"><input type="text" name="nome" id="inome" required maxlength="30"placeholder="Nome completo" autocomplete="name"></label>
+            </p>
+            <p>
+                <label for="imedia"><input type="number" name="media" id="imedia" required autocomplete="off" min="0" max="10" placeholder="Media de 0 a 10" step="0.5"></label>
+            </p>
+            <p>
+                <label for="imes"><input type="month" name="mes" id="imes"></label>
+            </p>
+            <p id="botoes">
+                <input class="botao" type="submit" value="Enviar">
+                <input class="botao" type="reset" value="Limpar">
+            </p>
+        </form>
+    </main>
+</body>
+</html>
