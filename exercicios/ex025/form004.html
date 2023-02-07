@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            font-family: arial;
+            padding: 0px;
+            margin: 0px;
+        }
+        h1{
+            padding: 20px;
+            text-align: center;
+        }
+        fieldset{
+            padding: 25px;
+            margin: 15px;
+            border-radius: 3px;
+            border: 1px solid black;
+            position: relative;
+        }
+        fieldset > legend{
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        form{
+            display: block;
+            margin: auto;
+            position: absolute;
+        }
+        label{
+            font-weight: bold;
+        }
+        input{
+            margin: 5px;
+            padding: 3px;
+            border: 1px solid black;
+            border-radius: 2px;
+        }
+        #botao{
+            margin: 0px 0px 0px 15px;
+            width: 308px;
+            height: 35px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(118, 118, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="imail">Email</label>
+                <input type="email" name="email" id="imail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(**)*****-****">
+            </p>
+        </fieldset>
+        <!--Estudar sobre RegEx-->
+        <p>
+            <input type="submit" value="Enviar" id="botao">
+        </p>
+    </form>
+</body>
+</html>
