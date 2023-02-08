@@ -17,9 +17,19 @@
                 <label for="iemail">Email:</label>
                 <input type="email" name="email" id="iemail" autocomplete="email" required><br>
                 <label for="iold">Idade</label>
-                <input type="number" name="old" id="iold" min="18" autocomplete="off"><br>
-                <input type="radio" name="mas" id="imas"><label for="imas">Masculino</label>
-                <input type="radio" name="fem" id="ifem"><label for="ifem">Feminino</label>
+                <input type="number" name="old" id="iold" min="18" autocomplete="off" required><br>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" min="11" max="11" autocomplete="tel" required><br>
+                <label for="iestado">Estado:</label>
+                <select name="estado" id="iestado" required>
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="bh">Belo Horizonte</option>
+                    <option value="mg">Minas Gerais</option>
+
+                </select><br>
+                <input type="radio" name="sexo" id="imas"><label for="imas">Masculino</label><br>
+                <input type="radio" name="sexo" id="ifem"><label for="ifem">Feminino</label>
             </div>
         </fieldset>
 
