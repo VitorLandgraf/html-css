@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste input range</title>
+    <style>
+        body{
+            padding: 30px;
+        }
+        input[type=range]{
+            -webkit-appearance: none;
+            border: 1px solid white;
+            width: 100px;
+            height: 20px;
+        }
+        input[type=range]::-webkit-slider-runnable-track{
+            height: 5px;
+            width: 100px;
+            height: 5px;
+            background: #ddd;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            border: none;
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            background: goldenrod;
+            margin-top: -4px;
+        }
+        input[type=range]:focus {
+            outline: none;
+        }
+        input[type=range]:focus::-webkit-slider-runnable-track {
+            background: #ccc;
+        }
+        input[type=range]::-moz-range-track {
+            width: 100px;
+            height: 5px;
+            background: #ddd;
+            border: none;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <label for="iteste">Teste</label><br>
+        <input type="range" name="teste" id="iteste">
+    </form>
+</body>
+</html>
