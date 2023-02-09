@@ -4,35 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios</title>
+    <title>Curriculo</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <h1>Formularios</h1>
+    <h1>Curriculo</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
         <fieldset>
-            <legend>Dados Pessois</legend>
+            <legend>Dados Pessoais</legend>
             <div id="Dados">
                 <label for="iname">Nome:</label>
                 <input type="text" name="name" id="iname" autocomplete="name" required><br>
+
                 <label for="iemail">Email:</label>
                 <input type="email" name="email" id="iemail" autocomplete="email" required><br>
+
                 <label for="iold">Idade</label>
                 <input type="number" name="old" id="iold" min="18" autocomplete="off" required><br>
+
                 <label for="itel">Telefone:</label>
                 <input type="tel" name="tel" id="itel" min="11" max="11" autocomplete="tel" required><br>
+
                 <label for="iestado">Estado:</label>
                 <select name="estado" id="iestado" required>
                     <option value="sp">São Paulo</option>
                     <option value="rj">Rio de Janeiro</option>
                     <option value="bh">Belo Horizonte</option>
                     <option value="mg">Minas Gerais</option>
-
                 </select><br>
+
+                <p>Sexo:</p>
                 <input type="radio" name="sexo" id="imas"><label for="imas">Masculino</label><br>
                 <input type="radio" name="sexo" id="ifem"><label for="ifem">Feminino</label>
+
             </div>
         </fieldset>
+        <Fieldset>
+            <legend>Conhecimentos</legend>
+            <div id="conhecimentos">
+                <form action="cadastro.php" method="get">
 
+                    <input type="checkbox" name="html" id="ihtml">
+                    <label for="ihtml">HTML5</label><br>
+
+                    <input type="checkbox" name="css" id="icss">
+                    <label for="icss">CSS3</label><br>
+
+                    <input type="checkbox" name="js" id="ijs">
+                    <label for="ijs">Javacsript</label><br>
+
+                    <input type="checkbox" name="php" id="iphp">
+                    <label for="iphp">PHP</label>
+                </form>
+            </div>
+            <div id="nivel">
+                <h2>Nivel de Conhecimento</h2>
+                <p>De uma nota para o seu nivel de conhecimento em cada linguagem.</p>
+
+                <form action="cadastro.php" method="get">
+
+                    <label for="inhtml">HTML5</label><br>
+                    <input type="range" name="nhtml" id="inhtml" min="0" max="5"><br>
+
+                    <label for="incss">CSS3</label><br>
+                    <input type="range" name="ncss" id="incss" min="0" max="5"><br>
+
+                    <label for="injs">Javascript</label><br>
+                    <input type="range" name="njs" id="injs" min="0" max="5"><br>
+
+                    <label for="inphp">PHP</label><br>
+                    <input type="range" name="nphp" id="inphp" min="0" max="5">
+                </form>
+            </div>
+        </Fieldset>
+
+        <input type="submit" value="Enviar">
     </form>
 </body>
 </html>
