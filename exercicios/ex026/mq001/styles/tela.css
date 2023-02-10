@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/*Screen Style*/
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+html
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+header
+{
+    padding: 20px 20px 0px 20px;
+    background-image: linear-gradient(to bottom, rgb(175, 175, 175), rgb(129, 129, 129));
+}
+
+h1
+{
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+menu ul
+{
+    text-align: center;
+}
+menu li
+{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px 5px;
+    color: white;
+    padding: 10px;
+}
+menu li:hover
+{
+    background-color: rgb(56, 56, 56);
+    border-radius: 3px;
+    transition: linear 0.2s;
+}
+article
+{
+    width: 500px;
+    margin: auto;
+}
+article h2
+{
+    padding: 15px 0px;
+}
+article p
+{
+    text-align: justify;
+}
